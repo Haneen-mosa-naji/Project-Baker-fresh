@@ -7,25 +7,54 @@
   --secondary-font: "Inter", sans-serif;
   --btn-color: #bc8157;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding-top:50px;
+}
 
 .navbar-custom {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  padding: 15px 0;
-  background-color: transparent;
+ position: fixed;
+ top: 0;
+width: 100%;
+ background-image: url(../img/HeroSection/Hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.navlogo img {
+.width-30{
+  width: 30%;
 }
+.width-20{
+  width: 20%;
+}
+
+.width-60{
+  width: 60%;
+}
+
+
+.width-70{
+  width: 70%;
+}
+
 .navbar-custom a {
   color: var(--main-color);
   font-family: var(--secondary-font);
   font-weight: 400;
   line-height: 28.8px;
+  font-size:20px;
+
 }
-.navbar-custom i {
-  color: var(--main-color);
+.navlogo i {
+   color: var(--main-color);
+  
+  font-size:20px;
+
 }
 
 .Hero {
@@ -34,8 +63,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 140vh;
-  padding: 0;
+  height:850px;
+  padding-bottom: 40px;
+  
+   
+
 }
 .Hero .container,
 .Hero .row,
@@ -51,9 +83,13 @@
 .Hero h1 {
   color: var(--main-color);
   font-family: var(--main-font);
-  font-size: 85px;
+  font-size:80px;
   font-weight: 400;
   line-height: 85px;
+  line-height: 1.2;
+
+ 
+
 }
 
 .order-now-btn {
@@ -108,18 +144,19 @@
 
 
 .logos{
+  display: flex;
+  flex-direction: row;
+ gap:80px;
+ margin-top: 80px;
+ align-items: center;
+ justify-content: center;
 
-margin-top: 80px;
-gap:50px;
 }
 .logos img{
-  height:85px;
-  width: 100px;
+  height:110px;
+  width: 120px;
 }
 
-.iiiiii {
-  height: 1000px;
-}
 
 .footer {
   height: 100vh;
@@ -190,13 +227,238 @@ color: var(--secondary-color-b);
 }
 .footer-bot a {
   font-family: var(--secondary-font);
-  color: var(--secondary-color-b);
+  color: var(--secondary-color-g);
   font-size: 14px;
   font-weight: 400;
   line-height: 25.2px;
   text-decoration: none;
 }
+.footer-bot a:hover {
+ 
+  color: var(--secondary-color-b);
+  
+}
+
 .footer-right {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+   gap: 40px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992x){
+.icon-nav{
+  text-align: center;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width:934px){
+  .logos img{
+  height:85px;
+  width:90px;
+}
+.footer-top .input-footer{
+  width: 420px;
+}
+
+}
+@media screen and (max-width:801px){
+.logos{
+ flex-wrap: wrap;
+
+}
+
+}
+
+
+@media screen and (max-width:769px){
+
+.Hero h1 {
+  font-size: 60px;
+}
+
+.footer-bot{
+  display: flex;
+ flex-direction: column !important;
+ width: 100%;
+ gap: 40px;
+
+}
+
+.footer-left{
+  padding-left: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footer-right{
+  width: 100%;
+ 
+}
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:639px){
+  .logos img{
+  height:85px;
+  width:90px;
+}
+
+.footer-top span{
+  font-size:25px;
+}
+.footer-top .input-footer{
+  width:250px;
+}
+
+}
+
+@media screen and (max-width:479px){
+
+.Hero h1 {
+
+
+  font-size:40px;
+
+
+}
+
+.Hero img
+
+ {
+    height:80px;
+    width: 60px;
+}
+
+.footer-top .input-footer{
+  width:150px;
+ height:50px;
+ font-size:12px;
+}
+
+.footer-top .button-footer {
+   width:100px;
+ height:50px;
+     font-size:18px;
+}
+
+
+
+}
+
+@media screen and (max-width:467px){
+.footer-right{
+ flex-direction: column;
+ gap: 10px;
+ 
+}
+}
+@media screen and (max-width:564px){
+  .page-nav{
+     display: flex;
+    flex-direction:column;
+    align-items:center;
+     justify-content: center;
+  }
+  .icon-nav{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+  }
+
+}
+
+
+@media screen and (max-width:400px){
+
+  .Hero h1 {
+  font-size:40px;
+}
+.Hero img
+
+ {
+    height:60px;
+    width: 40px;
+}
+
+.logos{
+ flex-direction: column;
+ gap: 10px;
+
+}
+
+.footer-top span{
+  font-size:18px;
+}
+.footer-top .input-footer{
+  width:180px;
+     font-size:14px;
+     
+}
+}
+
+
+@media screen and (max-width:353px){
+  .footer-top .input-footer{
+  width:100px;
+ height:50px;
+ font-size:12px;
+}
+
+.footer-top .button-footer {
+   width:70px;
+ height:50px;
+     font-size:14px;
+}
+.footer-top span{
+  font-size:14px;
+  font-weight: 800;
+}
+
+
 }
