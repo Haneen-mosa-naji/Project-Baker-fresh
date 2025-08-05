@@ -114,11 +114,96 @@ width: 100%;
 }
 
 
+
+
+
+
+.ComeWithUs-section{
+  margin-top:200px;
+  background-image: url(../img/ComeWithUs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ width: 100%;
+  height:600px;
+padding-left:80px;
+ padding-right:80px;  
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+    justify-items:center;
+    align-items: center;
+
+ 
+
+ 
+}
+
+
+.ComeWithUsLeft{
+background-color: #2F1E12;
+    padding: 70px 60px;
+    max-width: 720px;
+     
+     color: var(--main-color);
+    
+     display:flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items:flex-start;
+     justify-content: center;
+   
+     
+   
+}
+.ComeWithUsLeft h3{
+font-family: var(--main-font);
+ font-size: 24px;
+}
+
+.ComeWithUsLeft h3::after{
+  content:" _______";
+  font-size: 24px;
+  font-weight: bold;
+}
+.ComeWithUsLeft p{
+  font-family: var(--secondary-font);
+   font-size: 16px;
+}
+
+.ComeWithUsRight{
+  position: relative;
+
+
+}
+
+.ComeWithUsRightArrow{
+    position: absolute ;
+        top: 73px;
+    left:88px;
+  color: var(--main-color);
+  font-size:42px;
+  font-weight: 200 !important;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logos{
-  display: flex;
-  flex-direction: row;
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
  gap:80px;
  margin-top: 80px;
+ margin-bottom: 80px;
  align-items: center;
  justify-content: center;
 
@@ -409,9 +494,19 @@ color: var(--secondary-color-b);
 
 
 @media screen and (max-width:934px){
-  .logos img{
-  height:85px;
-  width:90px;
+  
+
+.ComeWithUs-section{   
+  padding: 10px;
+   grid-template-columns:1fr;
+    gap: 20px;
+}
+.logos {
+  width: 100%;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-items: center;
+  
 }
 .footer-top .input-footer{
   width: 420px;
@@ -461,10 +556,7 @@ color: var(--secondary-color-b);
 
 
 @media screen and (max-width:639px){
-  .logos img{
-  height:85px;
-  width:90px;
-}
+
 
 .footer-top span{
   font-size:25px;
@@ -475,6 +567,44 @@ color: var(--secondary-color-b);
 
 }
 
+
+@media screen and (max-width:572px){
+
+  .logos{
+ grid-template-columns:1fr 1fr;
+
+
+
+}
+.logos img{
+  margin-bottom:20px;
+}
+}
+
+@media screen and (max-width:564px){
+  .page-nav{
+     display: flex;
+    flex-direction:column;
+    align-items:center;
+     justify-content: center;
+  }
+  .icon-nav{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+  }
+
+}
+
+
+@media screen and (max-width:550px){
+  .ComeWithUs-section{
+    height:fit-content;
+  }
+
+}
 @media screen and (max-width:479px){
 
 .Hero h1 {
@@ -515,24 +645,6 @@ color: var(--secondary-color-b);
  
 }
 }
-@media screen and (max-width:564px){
-  .page-nav{
-     display: flex;
-    flex-direction:column;
-    align-items:center;
-     justify-content: center;
-  }
-  .icon-nav{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
-
-  }
-
-}
-
-
 @media screen and (max-width:400px){
 
   .Hero h1 {
@@ -546,8 +658,8 @@ color: var(--secondary-color-b);
 }
 
 .logos{
- flex-direction: column;
- gap: 10px;
+ grid-template-columns:1fr;
+
 
 }
 
@@ -627,3 +739,5 @@ color: var(--secondary-color-b);
  
 }
 }
+
+
