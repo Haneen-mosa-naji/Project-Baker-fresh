@@ -190,10 +190,123 @@ font-family: var(--main-font);
 
 
 
+.banner-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.banner{
+  background-size: cover;
+  height:260px;
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    
+    gap: 15px;
+     z-index: 0;
+
+     
+}
+
+.banner1{
+    background-image: url(../img/bannersection/banner-01.png);
+
+}
 
 
+.banner1::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+}
+
+.banner span {
+   color:var(--main-color);
+     z-index: 1000000000;
+     
+
+}
+
+.spannumber {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  align-self:flex-end;
+ padding-right:15px;
+ padding-top:12px;
+}
+
+.spanname {
+   font-size: 32px;
+   font-family: var(--main-font);
+  padding-left:40px;
+ padding-top:60px;
+
+}
+.banner a{
+    color:var(--main-color);
+     z-index: 1000000000;
+   font-size: 15px;
+   font-family: var(--secondary-font);
+  padding-left:40px;
+ padding-top:10px;
+}
 
 
+.banner2{
+    background-image: url(../img/bannersection/banner-02.png);
+  
+}
+
+.banner2::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+}
+
+.banner3{
+    background-image: url(../img/bannersection/banner-03.png);
+ 
+}
+
+.banner3::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+}
+
+.banner4{
+    background-image: url(../img/bannersection/banner-04.png);
+   
+}
+.banner4::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+}
 
 
 
@@ -555,6 +668,8 @@ color: var(--secondary-color-b);
 }
 
 
+
+
 @media screen and (max-width:639px){
 
 
@@ -566,7 +681,13 @@ color: var(--secondary-color-b);
 }
 
 }
+@media screen and (max-width:620px){
+  .banner-section{
 
+    grid-template-columns: auto;
+  }
+
+}
 
 @media screen and (max-width:572px){
 
