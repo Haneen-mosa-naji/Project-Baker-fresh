@@ -1036,7 +1036,7 @@ z-index: 0;
 }
 
 
-@media screen and (max-width:288px){
+@media screen and (max-width:300px){
 
  .OurProductsLinks{
    display: grid;
