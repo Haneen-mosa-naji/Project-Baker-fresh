@@ -119,7 +119,7 @@ width: 100%;
 
 
 .ComeWithUs-section{
-  margin-top:200px;
+  margin-top:80px;
   background-image: url(../img/ComeWithUs.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -327,8 +327,87 @@ font-family: var(--main-font);
    z-index: 1;
 }
 
+.SweetDaySection{
+    margin-top:100px;
+
+}
+.SweetDay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.SweetDay h2{
+  color: var(--secondary-color-b);
+  font-size: 36px;
+  font-family: var(--main-font);
+      font-weight: 400;
+
+}
 
 
+.SweetDay p{
+  color: var(--secondary-color-g);
+  font-size: 19px;
+  font-family: var(--main-font);
+  width:70%;
+  text-align: center;
+      font-weight: 400;
+
+}
+
+
+.AllproductSweetDay{
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 80px;
+   margin-bottom:100px;
+   gap:20px;
+  
+}
+
+.Allproduct1SweetDay{
+  border: 1.9px solid #e4e2e0f1;
+  width:100%;
+  height:450px;
+
+}
+
+.Allproduct1SweetDay  a {
+  font-family: var(--main-font);
+  color:var(--secondary-color-b);
+   font-size:22px;
+   text-decoration: none;
+
+ } 
+
+
+ .Allproduct1SweetDay a:hover {
+  color: var(--btn-color);
+
+}
+
+.Allproduct1SweetDay  span {
+  font-family: var(--main-font);
+  color:var(--secondary-color-b);
+   font-size:32px;
+
+ } 
+
+
+ .imgproduct{
+  width:85%;
+  height:300px;
+ 
+}
+
+.imgarrow{
+  width:40px ;
+  height: 15px;
+}
 
 
 
@@ -360,10 +439,12 @@ font-family: var(--main-font);
 
 .OurProducts a{
    color: var(--secondary-color-g);
+   
   font-size: 19px;
   font-family: var(--secondary-font-font);
   text-decoration: none;
 }
+
 .OurProductsafter::after{
 content: "|";
 margin-left:30px;
@@ -378,6 +459,10 @@ margin-left:30px;
 
 }
 
+.OurProductsLinks a:hover{
+  color: var(--btn-color);
+}
+
 .Allproduct{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -387,7 +472,9 @@ margin-left:30px;
 }
 
 .Allproduct1img{
-  border: var(--secondary-color-g)  solid 1px ;
+  border: 1.9px solid #e4e2e0f1;
+    box-shadow: 0px 0px 1px 4px  #e0dcd81c;
+
   height: 335px;
   width: 268px;
   margin-left: 10px;
@@ -932,6 +1019,27 @@ z-index: 0;
  gap: 10px;
  
 }
+}
+@media screen and (max-width:800px){
+.AllproductSweetDay{
+  grid-template-columns: repeat(2,1fr);
+
+ 
+}
+
+ 
+
+}
+@media screen and (max-width:500px){
+.AllproductSweetDay{
+  grid-template-columns:1fr;
+
+
+ 
+}
+
+ 
+
 }
 @media screen and (max-width:400px){
 
