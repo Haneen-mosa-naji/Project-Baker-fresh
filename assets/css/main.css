@@ -688,13 +688,17 @@ z-index: 0;
   z-index: 1;
 }
 
-.Hero-shop .content {
+
+.Hero-shop .content1 {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
-.Hero-shop  h1{
- font-size: 80px;
+
+
+.Hero-shop h1 {
+ font-size:55px;
  font-family:var(--main-font);
  color: #ffffff;
 
@@ -702,12 +706,25 @@ z-index: 0;
 
 
 .Hero-shop  a{
- font-size:30px;
+ font-size:16px;
  font-family:var(--main-font);
  color: #ffffff;
  text-decoration: none;
 
 }
+.Hero-shop  a:hover{
+color: var(--btn-color);
+font-weight: 700;
+
+}
+
+.Hero-shop  span{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+
+}
+
 
 
 
@@ -754,7 +771,7 @@ z-index: 0;
 
 
 .footer-bot-shop {
-  height:650px;
+  height:480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,6 +798,173 @@ z-index: 0;
 
 
 
+/* =========================================================================================================== */
+
+/* HeroContactUs */
+
+
+
+.HeroContactUs {
+  background-image: url(../img/ContactUs/ContactUs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:550px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   position: relative;
+
+z-index: 0;
+   
+
+}
+
+.HeroContactUs::after {
+ content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right:0;
+  bottom:0;
+  width: 100%; 
+ 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.HeroContactUs .content1 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+
+
+.HeroContactUs  h1 {
+ font-size:px;
+ font-family:var(--main-font);
+ color: #ffffff;
+
+}
+
+
+.HeroContactUs  a{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+ text-decoration: none;
+
+}
+.HeroContactUs  a:hover{
+color: var(--btn-color);
+font-weight: 700;
+
+}
+.HeroContactUs  span{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+
+}
+
+.InformationSection{
+  margin-top:120px;
+   margin-bottom: 120px;
+}
+.LeftInformation{
+  gap: 50px;
+}
+.Information{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+
+.LeftInformation h5{
+  font-size: 36px;
+  font-family: var(--main-font);
+  color: var(--secondary-color-b);
+}
+
+
+.LeftInformation p{
+  font-size:14px;
+  color: var(--secondary-color-g);
+  font-family: var(--secondary-font);
+
+}
+
+
+.LeftInformation1Icon {
+  width: 80px;
+  height: 80px;
+   border: 1.9px solid #e4e2e0f1;
+   margin-right: 20px;
+display: flex;
+
+
+
+}
+.LeftInformation1 i{
+  color: var(--btn-color);
+  width: 24px;
+  height: 26px;
+  align-self: center;
+  padding-left: 34px;
+  padding-top:6px;
+
+}
+
+
+.RightInformation{
+    
+    padding: 40px 15px;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        gap: 30px;
+
+
+}
+
+.RightInformation h5{
+font-size: 24px;
+font-family: var(--main-font);
+color: var(--secondary-color-b);
+}
+
+.RightInformation form{
+  font-size: 14px;
+font-family: var(--secondary-font);
+color: var(--secondary-color-b);
+}
+
+
+.RightInformation .inputname{
+padding: 10px 15px;
+width:220px;
+height: 54px;
+
+ 
+}
+
+.RightInformation .inputemail{
+padding: 10px 15px;
+height: 54px;
+ 
+}
+.RightInformation textarea {
+  height: 215px;
+}
+
+
+
+ .btnSendMessage:hover{
+  background-color: var(--btn-color);
+}
 
 
 
@@ -790,36 +974,83 @@ z-index: 0;
 
 
 
+@media screen and (max-width:1059px){
+  .Information{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .RightInformation{
+    margin-top: 30px;
+  }
+}
 
 
 
+@media screen and (max-width:705px){
+ .RightInformation{
+    
+    padding:10px 10px;
+
+ }
+ 
+.inputnameful{
+  flex-direction: column !important ;
+  padding: 5px 5px ;
+  
+}
+
+.inputname{
+  width: 100% !important;
+}
+
+}
+@media screen and (max-width:402px){
+  .LeftInformation1{
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+
+  }
+}
+
+@media screen and (max-width:310px){
+  
+.RightInformation{
+    
+padding-left: 3px;
+padding-right: 3px;
+
+}
 
 
 
+.RightInformation .inputname{
+padding: 5px 5px;
+ 
+}
 
+.RightInformation .inputemail{
+padding: 5px 5px;
+ 
+}
+.LeftInformation{
+  align-items: center;
+}
 
+.logonavbarimg{
+  width:150px;
+  height:80px;
+ 
+}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:468px){
+.footer-shop{
+  height:700px;
+  padding-top:100px;
+ }
+}
 @media screen and (max-width:1214px){
   .Allproduct{
     grid-template-columns: repeat(3,1fr);
