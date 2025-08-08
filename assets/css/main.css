@@ -52,6 +52,18 @@ width: 100%;
 
 
 }
+.navbar-custom a:hover {
+color: var(--btn-color);
+
+}
+
+.dropdown-menu a{
+  font-size:15px;
+}
+
+
+
+
 .navlogo i {
    color: var(--main-color);
   
@@ -962,16 +974,273 @@ height: 54px;
 
 
 
- .btnSendMessage:hover{
-  background-color: var(--btn-color);
+ .btnSendMessage button:hover{
+  background-color: var(--btn-color) !important;
 }
 
 
 
+/* =========================================================================================================== */
+
+/*About Us*/
+
+
+.HeroAboutUs {
+  background-image: url(../img/AboutUSection/AboutUs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:550px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   position: relative;
+
+z-index: 0;
+   
+
+}
+
+.HeroAboutUs::after {
+ content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right:0;
+  bottom:0;
+  width: 100%; 
+ 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.HeroAboutUs .content1 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
 
 
 
+.HeroAboutUs  h1 {
+ font-size:px;
+ font-family:var(--main-font);
+ color: #ffffff;
 
+}
+
+
+.HeroAboutUs a{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+ text-decoration: none;
+
+}
+.HeroAboutUs  a:hover{
+color: var(--btn-color);
+font-weight: 700;
+
+}
+.HeroAboutUs span{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+
+}
+
+
+/* =========================================================================================================== */
+
+/*HeroBlogDetails*/
+
+
+.HeroBlogDetails {
+  background-image: url(../img/BlogDetailsSection/BlogDetails.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:550px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   position: relative;
+
+z-index: 0;
+   
+
+}
+
+.HeroBlogDetails::after {
+ content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right:0;
+  bottom:0;
+  width: 100%; 
+ 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.HeroBlogDetails .content1 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+
+
+.HeroBlogDetails  h1 {
+ font-size:48px;
+ font-family:var(--main-font);
+ color: #ffffff;
+
+}
+
+
+.HeroBlogDetails a{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+ text-decoration: none;
+
+}
+.HeroBlogDetails a:hover{
+color: var(--btn-color);
+font-weight: 700;
+
+}
+.HeroBlogDetails span{
+ font-size:16px;
+ font-family:var(--main-font);
+ color: #ffffff;
+
+}
+
+
+.BlogDetailsSection{
+  margin-top: 100px;
+  margin-bottom:100px ;
+  
+}
+.BlogDetailsSectionContent{
+  gap: 30px;
+}
+.BlogDetailsSection-a{
+  color: var(--btn-color);
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.BlogDetailsSection-a:hover{
+  color: var(--secondary-color-b);
+
+}
+
+.BlogDetailsSection-span{
+  color: var(--secondary-color-g);
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+}
+
+.BlogDetailsSectionContent h3{
+  color: var(--secondary-color-b);
+  font-size: 28px;
+  font-family: var(--main-font);
+  
+}
+.BlogDetailsSectionContent p{
+    color: var(--secondary-color-g);
+  font-size:20px;
+  font-family: var(--secondary-font);
+  line-height:2;
+  width: 100%;
+  
+}
+
+
+.span1{
+  color: var(--secondary-color-g);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 700;
+    margin-right: 10px;
+
+}
+.span2{
+  color: var(--secondary-color-b);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+ line-height: inherit;
+    margin-right: 10px;
+
+}
+.BlogDetailsSection i{
+  color:#555555 ;
+
+  font-size:18px;
+  margin-right:15px;
+      cursor: pointer;
+}
+.BlogDetailsSection i:hover{
+  color:var(--btn-color) ;
+
+}
+.contentful{
+  padding: 40px 0;
+}
+
+.LeaveaReply{
+  margin:100px 0;
+}
+.LeaveaReplyInfo{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  
+}
+.LeaveaReplyInfo input{
+      height: 54px;
+    padding: 10px 15px;
+    border: 1px solid #E5E5E5;
+    font-size: 14px;
+    color: var(--secondary-color-g);
+
+}
+
+.LeaveaReply textarea{
+      height:215px;
+    padding: 10px 15px;
+    border: 1px solid #E5E5E5;
+    font-size: 14px;
+    color: var(--secondary-color-g);
+
+}
+ .LeaveaReply button{
+  width:250px ;
+  height:55px ;
+  font-size: 14px;
+  font-family: var(--secondary-font);
+}
+
+ .LeaveaReply button:hover{
+  background-color: var(--btn-color) !important;
+}
+
+
+/* =========================================================================================================== */
+
+/* =========================================================================================================== */
+/* =========================================================================================================== */
 
 
 @media screen and (max-width:1059px){
@@ -1012,6 +1281,7 @@ height: 54px;
     gap: 20px;
 
   }
+
 }
 
 @media screen and (max-width:310px){
@@ -1129,9 +1399,17 @@ padding: 5px 5px;
  
 }
 
+.LeaveaReplyInfo{
 
+  grid-template-columns: 1fr;
+ 
+  
+}
 
-
+.LeaveaReplyInfo input{ 
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 
 
@@ -1297,6 +1575,28 @@ padding: 5px 5px;
   width:180px;
      font-size:14px;
      
+}
+
+.BlogDetailsSectionContent h3{
+  color: var(--secondary-color-b);
+  font-size:20px;
+  font-family: var(--main-font);
+  
+}
+.BlogDetailsSectionContent p{
+    color: var(--secondary-color-g);
+  font-size:15px;
+
+
+  
+}
+
+.contentful{
+  flex-direction: column !important;
+gap: 25px;
+padding:30px 15px 30px 0;
+
+
 }
 }
 
